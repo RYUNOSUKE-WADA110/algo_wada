@@ -1,0 +1,15 @@
+ ０歳から１００歳までの年齢別の男女の人数差を求める
+ for(index 0 to 100)  
+        wm_diff <- peoples_m[index] - peoples_w[index]
+        (年齢: index 差: wm_diff) を表示
+    end
+
+ここから各年代の男女合計を求める
+total = peoples_m[0] + peoples_m[0] + peoples_m[1] + peoples_m[1] + peoples_m[2] + peoples_m[3]
+        + peoples_m[4] + peoples_m[4] + peoples_m[5] + peoples_m[5]+ peoples_m[6] + peoples_m[6]
+         +peoples_m[7] + peoples_m[7]+peoples_m[8] + peoples_m[8]+ peoples_m[9] + peoples_m[9]
+//10代の男女合計を求める
+total <-0
+for(index 10 to 19)
+total = total + (peoples_m[index] + peoples_w[index])
+end
