@@ -1,0 +1,22 @@
+課題自動販売機１
+投入金額 - 商品価格
+
+(money[0]*投入枚数　+ money[1]*投入枚数 + money[2]*投入枚数 + money[3]*投入枚数)
+-goods.name[]
+
+ここまででお釣りの金額が出た。
+ここからはお釣りの金額をどのように返金するか書いていく
+
+お釣りが０円の場合
+if (change_total =0 )
+ change[change_index] = 0
+ end
+
+ ０円でない場合
+ 500円から大きい効果の額で割っていく
+ その余りを次に大きい額の効果で割る
+ change_total%500 余り
+ numberof500 <-change_total/500　枚数
+change_total%100
+change_total%50
+change_total%10

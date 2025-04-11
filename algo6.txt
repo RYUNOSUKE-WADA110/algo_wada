@@ -1,0 +1,9 @@
+ｃｓｖファイルを読み込む
+ファイル項目[0] 商品名
+ファイル項目[1]商品単価
+
+goods.name[商品_index] <-ファイル項目[0]
+goods.price[商品_index] <-ファイル項目[1]
+
+ (番号: index　商品: goods.name[index] 単価: goods.price[index] 円) を表示　 
+  

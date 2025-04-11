@@ -1,0 +1,39 @@
+ファイル項目[0商品名
+ファイル項目[1]商品単価
+ファイル項目[2]商品在庫
+
+商品を選択させる
+if (入力値 >=0 AND 入力値 < 商品名)
+この場合在庫がない
+else
+end
+
+選択した商品と単価を表示する
+goods.name[goods_index] goods.price[goods.index]円
+
+お釣りの計算
+totalInpit <- 0  投入金額合計
+index <- 0
+while (money[index] = 0)
+totalInpit <- totalInpit + money[index] + 1
+end
+
+ここまでが投入金額の計算
+ここからが投入金額から商品単価を引いてお釣りを計算する
+changeTotal <- totalInpit - goods.price[gods_index]
+if(changeTotal <0)
+金額不足
+end
+
+while (change_total !=0)
+change_total<-change_total % 金種[金種_index]
+numberOfcoin <-change_total/金種[金種_index]
+for(index0 to numberOfcoin - 1)
+     change[change_index] <- 金種[金種_index]
+    change_index <- change_index + 1
+    end
+    金種_index <- 金種_index + 1
+    end
+    change[change_index] = 0
+    お釣り０で終了
+
